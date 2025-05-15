@@ -3,16 +3,13 @@ import time
 from datetime import datetime
 print(datetime.now().strftime('%m/%d/%Y %H:%M:%S'))
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyDyOYksw3wYh1JHbRkstmiAsIS16YwlMLk")
+genai.configure(api_key="Nuh-uh")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-# Log in (create a session)
-session = scratch.login("ScratchCat-Ai", "AiIsDaBest123!")
+session = scratch.login("N0", "n0pe")
 
-# Get your user object using the username
-user = session.connect_user("ScratchCat-Ai")
+user = session.connect_user("getyo")
 
-# Track seen comments to avoid duplicates
 seen_ids = set()
 
 seen_comment_ids = set()
@@ -40,6 +37,6 @@ while True:
 
 	            seen_comment_ids.add(comment_id)
 
-	    time.sleep(5)  # Check for new comments every 30 seconds
+	    time.sleep(5)  
 	except Exception as e:
 		print(e) # testing testing
